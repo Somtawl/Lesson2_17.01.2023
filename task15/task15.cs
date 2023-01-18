@@ -1,11 +1,14 @@
 ﻿Console.WriteLine("Введите число соответствующее дню недели, где 1 это понедельник, a 7 это воскресенье");
 int num = int.Parse(Console.ReadLine());
-string[] days = {"заглушка","Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"};
-if (num >= 1 && num <= 7)
+if (num >= 1 && num <= 5)
 {
-    Console.WriteLine("Цифра {0} соответсвует дню недели {1}",num,days[num]);
+    Console.WriteLine("Данный день недели не является выходным");
+}
+else if (num == 6 || num == 7)
+{
+    Console.WriteLine("Ура Выходной!!!");
 }
 else
 {
-    Console.WriteLine("Вы ввели не верное число");
+    Console.WriteLine("Вы введи неверное число");
 }
